@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .erro{
+        @apply text-[.8125rem] text-red block text-left w-full mt-[10px] z-[1] !important
+    }
+}
+
+
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .erro{
+        @apply w-[62%]  !important
+    }
+}
+

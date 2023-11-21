@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .cadastro{
+    @apply flex justify-center pt-[130px] pb-[352px] items-center flex-col
+   }
+
+   .cadastro-logo{
+    @apply mb-[40px]
+   }
+
+   .cadastro-texto{
+    @apply text-blue text-[1.125rem] font-normal text-center leading-[26px]
+   }
+   
+   .cadastro-texto_2{
+    @apply text-blue text-[1.125rem] font-normal max-w-[500px] text-center leading-[26px] mb-[48px]
+   }
+
+   .cadastro-form{
+    @apply flex flex-col items-center w-full max-w-[552px]
+   }
+
+  
+}
+
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .cadastro{
+        @apply pt-[260px]
+    }
+
+    .cadastro > form > input{
+        @apply w-[21.5rem] !important
+    }
+ 
+}
+
+
+@media screen and (max-width: 759px){
+    .cadastro{
+        @apply pt-[260px]
+    }
+
+    .cadastro > form > input{
+        @apply w-[21.5rem] !important
+    }
+
+    .cadastro-logo{
+        @apply w-[8.875rem] h-[2.125rem] mb-[24px]
+    }
+
+    
+   .cadastro-texto{
+    @apply text-[1rem] mb-[5px]
+   }
+   
+   .cadastro-texto_2{
+    @apply  text-[1rem] mb-[24px] max-w-[300px]
+   }
+
+   .cadastro-form{
+    @apply  max-w-[345px]
+   }
+
+}

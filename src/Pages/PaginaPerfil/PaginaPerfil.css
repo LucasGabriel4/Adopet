@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .perfil{
+        @apply flex justify-center items-center pt-[100px] flex-col px-[2%]
+    }
+
+    .perfil-texto{
+        @apply text-blue text-[1.125rem] font-normal max-w-[34.5rem] text-center mb-[37px] leading-[26px]
+    }
+
+    .perfil-form{
+        @apply w-full max-w-[34.5rem] p-[30px] bg-light-gray-2 mb-[36px]
+    }
+
+    .perfil-form_titulo{
+        @apply text-center text-gray font-semibold text-[1.3125rem] leading-[24px] mb-[16px]
+    }
+
+    .perfil-form-sobre_label{
+        @apply text-blue font-semibold block mb-[8px] mt-[24px]
+    }
+
+    .perfil-form-botao_salvar{
+        @apply flex justify-center
+    }
+
+    .perfil-form-sobre_mensagem{
+        @apply resize-none outline-none w-full h-[6.5rem] p-[16px] mb-[32px]
+    }
+
+    .perfil-form-foto_label{
+        @apply text-blue font-semibold
+    }
+
+    .perfil-foto_usuario{
+        @apply flex justify-center items-center flex-col
+    }
+
+    .perfil-foto_imagem{
+        @apply w-[5rem] h-[5rem] rounded-[50%] bg-blue mb-[10px]
+    }
+    .perfil-foto_alterarImagem{
+        @apply text-Orange text-[.75rem] cursor-pointer
+    }
+
+
+    
+}
+
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .perfil{
+        @apply  pt-[150px] 
+    }
+}
+
+@media screen and (max-width: 759px){
+    .perfil{
+        @apply  pt-[150px] 
+    }
+
+    .perfil-texto{
+        @apply  text-[1rem]  max-w-[15.625rem] 
+    }
+
+    .perfil-form{
+        @apply w-full max-w-[25rem] 
+    }
+
+    .perfil-form > input::placeholder,
+    .perfil-form > textarea::placeholder{
+        @apply text-[.875rem]
+    }
+}

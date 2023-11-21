@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .header{
+        @apply absolute pt-[64px] pl-[150px] flex  items-center gap-[48px]
+    }
+    .logo{
+        @apply w-[8rem] h-[1.875rem] 
+    }
+     .nav-header{
+        @apply flex items-center  gap-[30px]
+     }
+     .nav-header_home{
+        @apply w-[1.1875rem] h-[1.4375rem]
+     }
+     .nav-header_mensagem{
+        @apply w-[1.4375rem] h-[1.125rem]
+     }
+}
+
+@media screen and (max-width: 759px){
+    .logo{
+        @apply hidden
+    }
+    .header{
+        @apply gap-[0px] pt-[64px] pl-[40px]
+    }
+    .nav-header{
+        @apply gap-[50px]
+     }
+}

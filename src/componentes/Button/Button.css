@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .button{
+        @apply bg-Orange
+        text-white rounded-[6px] 
+        text-[1.125rem] 
+        font-semibold mt-[25px]
+        hover:bg-btnHover 
+        transition duration-300 ease-out
+        block
+    }
+}
+
+@media screen and (max-width: 759px){
+    .button{
+        @apply w-[11.25rem] text-[1rem] !important
+    }
+}

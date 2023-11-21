@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .card{
+        @apply w-full max-w-[22.6875rem] bg-light-gray-2 flex p-[24px] gap-[16px]
+    }
+
+    .card-imagem{
+        @apply w-[9.25rem] h-[9.25rem]
+    }
+
+    .card-nome_pet{
+        @apply text-blue font-semibold mb-[8px]
+    }
+
+    .card-sobre_pet{
+        @apply text-[0.875rem] mb-[29px] text-gray
+    }
+
+    .card-localizacao_pet{
+        @apply text-[0.875rem] mb-[8px] text-gray
+    }
+
+    .card-contato-responsavel_pet{
+        @apply flex items-center
+    }
+
+    .card-contato-responsavel-pet_texto{
+        @apply text-[0.625rem] text-gray
+    }
+}

@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .login{
+    @apply flex justify-center pt-[130px] pb-[352px] items-center flex-col
+   }
+
+   .login-logo{
+      @apply mb-[16px]
+   }
+
+   .login-texto{
+      @apply text-blue text-[1.125rem] font-normal text-center leading-[26px] mt-[50px] mb-[50px]
+     }
+
+     .login-recuperar_senha{
+      @apply mt-[10px] text-red hidden text-[1rem]
+     }
+
+
+     .login-form{
+      @apply flex flex-col items-center w-full max-w-[552px] 
+     }
+
+}
+
+
+
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .login{
+        @apply pt-[260px] 
+     }
+
+     .login > form > input{
+       @apply w-[21.5rem] !important
+     }
+
+     .login-texto{
+      @apply  mt-[20px] mb-[20px]
+     }
+
+
+}
+
+
+@media screen and (max-width: 759px){
+      .login{
+         @apply pt-[260px] 
+      }
+
+      .login > form > input{
+      @apply w-[21.5rem] !important
+      }
+
+      .login-logo{
+         @apply w-[8.875rem] h-[2.125rem]
+      }
+
+   
+     .login-texto{
+      @apply  mt-[20px] mb-[20px] text-[1rem]
+     }
+
+     .login-recuperar_senha{
+      @apply block 
+     }
+
+     .login-form{
+      @apply  w-full max-w-[345px] 
+     }
+
+}

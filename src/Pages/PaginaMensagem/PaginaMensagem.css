@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .mensagem{
+        @apply flex justify-center items-center pt-[90px] flex-col px-[2%]
+    }
+
+    .mensagem-texto{
+        @apply text-blue text-[1.125rem] font-normal max-w-[30.75rem] text-center mb-[37px] leading-[26px]
+    }
+
+    .mensagem-form{
+        @apply w-full max-w-[34.5rem] p-[30px] bg-light-gray-2 mb-[36px]
+    }
+
+    .mensagem-form_label{
+        @apply text-blue font-semibold block mb-[8px] mt-[24px]
+    }
+
+    .mensagem-form-escreva-sua_mensagem{
+        @apply resize-none outline-none w-full h-[10.75rem] p-[16px] mb-[32px]
+    }
+
+    .mensagem-botao_enviar{
+        @apply flex justify-center
+    }
+}
+
+
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .mensagem{
+        @apply pt-[150px]
+    }
+}
+
+@media screen and (max-width: 759px){
+    .mensagem{
+        @apply pt-[150px]
+    }
+
+    .mensagem-texto{
+        @apply text-[1rem]  max-w-[15.625rem] 
+    }
+
+    .mensagem-form{
+        @apply w-full max-w-[25rem]
+    }
+
+    .mensagem-form > input::placeholder,
+    .mensagem-form > textarea::placeholder{
+        @apply text-[.875rem]
+    }
+}

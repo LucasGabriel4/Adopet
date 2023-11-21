@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .pets{
+        @apply pt-[90px]
+    }
+
+    .pets-texto{
+        @apply text-blue mb-[40px] text-center mx-auto
+    }
+
+    .pets-cards{
+        @apply flex flex-wrap justify-center gap-[16px] mb-[60px]
+    }
+}
+
+
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .pets{
+        @apply pt-[180px]
+    }
+}
+
+@media screen and (max-width: 759px){
+    .pets{
+        @apply pt-[120px]
+    }
+
+    .pets-texto{
+        @apply max-w-[250px]
+    }
+}

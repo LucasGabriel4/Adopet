@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+  .adopet-layout{
+    @apply w-full min-h-[100vh]
+  }
+   .adopet-layout-figure_2{
+    @apply absolute top-[180px] right-0 
+   }
+   .adopet-layout-figure_1{
+    @apply absolute top-0 left-0
+   }
+
+   .adopet-layout-patas_imagem{
+    @apply w-[19.8125rem] h-[25.4375rem] bg-cover absolute right-0 top-0 m-0 p-0
+   }
+
+   .adopet-layout-icone_usuario{
+    @apply flex justify-end pt-[46px] pr-[120px] 
+   }
+
+   .adopet-layout-icone_usuario > img{
+    @apply z-[1]
+   }
+
+   .adopet-layout-icone_perfil{
+    @apply flex justify-end pt-[46px] pr-[174px] 
+   }
+
+   .adopet-layout-icone-perfil_img{
+    @apply w-[4rem] h-[4rem]  rounded-[50%] z-[1]
+   }
+   .active{
+     @apply block w-[84px] top-[300px] !important
+   }
+
+  }
+
+
+
+  
+
+@media screen and (min-width: 760px) and (max-width: 980px){
+  .adopet-layout-icone_usuario{
+    @apply flex justify-end pt-[46px] pr-[70px] 
+   }
+}
+
+@media screen and (max-width: 759px){
+    .adopet-layout-figure_2{
+        @apply hidden
+    }
+
+    .adopet-layout-patas_imagem{
+      @apply w-[11.8125rem] h-[15.1875rem]
+     }
+
+     .adopet-layout-icone_usuario{
+      @apply  pt-[46px] pr-[35px] 
+     }
+     .adopet-layout-icone_perfil{
+      @apply  pt-[46px] pr-[35px] 
+     }
+  
+}

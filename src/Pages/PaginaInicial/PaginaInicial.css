@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .pagina-inicial{
+        @apply flex justify-center items-center flex-col pt-[130px];
+    }
+    .pagina-inicial-conteudo{
+        @apply flex flex-col items-center
+    }
+    .pagina-inicial-conteudo > button{
+        @apply mt-[16px]
+    }
+    .pagina-inicial-conteudo_logo{
+        @apply w-[16.25rem] h-[4rem] mb-[40px]
+    }
+
+    .pagina-inicial-conteudo_titulo{
+        @apply text-[1.75rem] leading-[3rem] text-white font-medium mb-[24px]
+    }
+    .pagina-inicial-conteudo_texto{
+        @apply text-[1.125rem] leading-[1.625rem] text-white max-w-[25rem] text-center font-normal mb-[32px]
+    }
+    .pagina-inicial-adopet_imagem{
+        @apply w-[21.625rem] h-[26.9375rem] relative top-[20px] bg-contain bg-no-repeat
+    }
+
+}
+
+
+
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .pagina-inicial-container > .pagina-inicial-conteudo{
+        @apply pt-[130px] 
+    }
+}
+
+
+@media screen and (max-width: 759px){
+    .pagina-inicial > .pagina-inicial-conteudo{
+        @apply pt-[130px] 
+    }
+    .pagina-inicial-conteudo_texto{
+        @apply text-[1rem] max-w-[14rem] 
+    }
+    .pagina-inicial-conteudo_logo{
+        @apply w-[11.625rem] h-[2.875rem] mb-[40px]
+    }
+    .pagina-inicial-adopet_imagem{
+        @apply w-[15.4375rem] h-[19.25rem] relative top-[20px] bg-contain 
+    }
+    
+    
+}
